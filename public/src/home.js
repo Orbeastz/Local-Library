@@ -1,16 +1,17 @@
-function getTotalBooksCount(books) {
-  let totalBooks = 0
-  books.forEach((book) => {
-    totalBooks += 1
+function getTotalItemCount(item){
+  let total = 0
+  item.forEach((item) => {
+    total +=1
   })
+  return total
+}
+function getTotalBooksCount(books) {
+  var totalBooks = getTotalItemCount(books)
   return totalBooks
 }
 
 function getTotalAccountsCount(accounts) {
-  let totalAccounts = 0
-  accounts.forEach((account) => {
-    totalAccounts += 1
-  })
+  var totalAccounts = getTotalItemCount(accounts)
   return totalAccounts
 }
 
